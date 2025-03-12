@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to bottom, #000000, #ffffff);
+  }
+  
+/* Header Styles */
+header {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation List */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: blue;
+  border-radius: 5px;
+}
+
+/* Menu Icon */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show menu icon on mobile */
+  }
+
+  .nav-list {
+    display: none; /* Hide navigation list by default on mobile */
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-list.active {
+    display: flex; /* Show navigation list when active */
+  }
+}
+  
+/* Profile Section */
+#profile {
+  padding: 150px 20px 50px; /* 150px top padding (50mm ≈ 150px) */
+  text-align: center;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px; /* Reduced margin to bring subtitle closer */
+  font-family: 'Georgia', serif;
+  color: white; /* White color for Badr Ait Bella */
+}
+
+.subtitle {
+  font-size: 1.2rem; /* Smaller font size */
+  color: white; /* White color for subtitle */
+  margin-bottom: 20px; /* Space between subtitle and button */
+  font-weight: normal; /* Normal font weight */
+}
+
+.view-projects {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-projects:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+  
+  /* About Me Section */
+  #about {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #about h2 {
+    color: white; /* White color for About Me title */
+  }
+  
+  #about p {
+    color: white; /* White color for "Hi, I'm Badr..." */
+  }
+  
+/* Certifications Section */
+#certs {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#certs h2 {
+  color: white;
+}
+
+.certs-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.certs-container img {
+  width: 200px; /* Increased from 100px */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certs-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  /* Projects Section */
+  #projects {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    color: white; /* White color for Projects title */
+  }
+  
+  .project {
+    margin-bottom: 40px;
+  }
+  
+  .project img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .project img:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .project-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    color: black; /* Black color for Contact title */
+  }
+  
+  .contact-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+  }
+  
+  .contact-logo:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="desig.css">
+  <header id="header">
+    <nav>
+  <!-- Menu Icon -->
+  <div class="menu-toggle" id="mobile-menu">
+    <img src="img/icons8-menu-50 (1).png" alt="Menu Icon" class="menu-icon">
+  </div>
+
+  <!-- Navigation List -->
+  <ul class="nav-list" id="nav-list">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#certs">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+</header
+
+<!-- Main Content -->
+<main>
+  <!-- Profile Section -->
+  <section id="profile" class="section">
+    <div class="profile-content">
+      <img src="img/bad.jpeg" alt="My Picture" class="profile-pic">
+      <h1>Badr Ait Bella</h1>
+      <h2 class="subtitle">Cybersecurity Specialist – Pentesting & Vulnerability Management</h2>
+      <button class="view-projects" onclick="scrollToProjects()">View My Projects</button>
+    </div>
+  </section>
+</main>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I'm Badr, a Penetration Tester with strong expertise in network security, ethical hacking, and vulnerability management. I specialize in identifying and mitigating security risks to protect systems from cyber threats.</p>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certs" class="section">
+      <h2>Certifications</h2>
+      <div class="certs-container">
+        <img src="img/Nouveau dossier/35_completion_certificate-1.png" alt="Certification 1">
+        <img src="img/Nouveau dossier/CS50x-1.png" alt="Certification 2">
+        <img src="img/Nouveau dossier/_completion_certificate-1.png" alt="Certification 3">
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="img/Nouveau dossier/for.png" alt="Project 1">
+        <h3>Forensic Tool Integrity Suite (FTIS)</h3>
+        <p>The Forensic Tool Integrity Suite (FTIS) is a comprehensive forensic analysis and diagnostic tool tailored for Windows systems. It enables users to evaluate system integrity, identify vulnerabilities, and detect potential compromises effectively.</p>
+        <a href="https://github.com/pedrobadr13/-Forensic-Tool-Integrity-Suite-FTIS-" target="_blank" class="project-button">View on GitHub</a>
+      </div>
+      <div class="project">
+        <img src="img/Nouveau dossier/firewall.png" alt="Project 2">
+        <h3>Firewall Manager: IPTables Control & Traffic Management Tool</h3>
+        <p>A Python-based tool for managing firewall rules and network traffic using IPTables. This script allows you to block/allow ports, enable/disable ICMP (ping), and control IP traffic (TCP, UDP, SSH) on Linux systems.</p>
+        <a href="https://github.com/pedrobadr13/firewall-manager" target="_blank" class="project-button">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-bar">
+        <a href="mailto:badraitbella403@gmail.com/" target="_blank">
+          <img src="img/icons8-email-64.png" alt="Gmail" class="contact-logo">
+        </a>
+        <a href="https://www.linkedin.com/in/badr-ait-bella-2a260a2bb/" target="_blank">
+          <img src="img/link.png" alt="LinkedIn" class="contact-logo">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
